@@ -21,7 +21,7 @@ pipeline{
 							       if (userInput == 'save') {
 							       releaseScope = RELEASE_SCOPE	
                                                                }
-                                                               echo "$userInput"
+                                                               
                                                                echo "$releaseScope"
                                                                echo "$RELEASE_SCOPE"
 
