@@ -20,11 +20,11 @@ pipeline{
 							 
 							       if (userInput == 'save') {
 							       releaseScope = env.RELEASE_SCOPE	
-
-                                                              }
-                                               echo "$releaseScope"
-					}
-	 		  }
+                                                               }
+                                                               echo "$releaseScope"
+					             }
+	 	                	  }
 	  
-	            }
+                             }
+                   }
 }
