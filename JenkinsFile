@@ -8,7 +8,12 @@ pipeline{
 	 		  }
 			    stage('Two') {
                                         steps {
-					                input("Lalala")
+					                input {
+    								message "Введите значение:"
+								parameters {
+							        string(name: 'userInput', defaultValue: '', description: 'Значение от пользователя')
+                                                                }
+                                                        }
 					}
 	 		  }
 	  
