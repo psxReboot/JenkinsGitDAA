@@ -9,7 +9,7 @@ pipeline{
 			    stage('Two') {
                                         steps {
 					               script {
-                 					       env.RELEASE_SCOPE = input message: 'Нужен ввод пользователя', ok: 'Release!',
+                 					      userInput = input message: 'Нужен ввод пользователя', ok: 'Release!',
                                                                parameters: [string(name: 'RELEASE_SCOPE', defaultValue: '', description: 'What is the release scope?')],
     							       buttons: [
 							       [$class: 'hudson.model.MessageButton', text: 'Сохранить', value: 'save'],
