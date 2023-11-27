@@ -19,7 +19,7 @@ pipeline{
                                                                def releaseScope = null
 							 
 							       if (userInput == 'save') {
-							       releaseScope = env.RELEASE_SCOPE	
+							       releaseScope = RELEASE_SCOPE	
                                                                }
                                                                echo "$releaseScope"
 					             }
